@@ -165,6 +165,7 @@ Cửa hàng bán điện thoại quản lý các sản phẩm gồm các thuộc
 
 - Sản phẩm chính hãng bổ sung thuộc tính: nhà sản xuất, bảo hành (số tháng).
 - Sản phẩm xách tay bổ sung thuộc tính: nguồn gốc, tình trạng.
+
 a) Xây dựng lớp sản phẩm với đầy đủ các thuộc tính, phương thức khởi tạo, phương thức getter/setter, in thông tin sản phẩm.
 
 b) Xây dựng lớp SanPhamChinhHang và SanPhamXachTay kế thừa từ lớp SanPham.

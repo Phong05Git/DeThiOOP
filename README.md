@@ -175,3 +175,26 @@ c) Xây dựng file sanpham.txt lưu thông tin sản phẩm (chứa ít nhất 
 d) Xây dựng form cho phép nhập thông tin mã sản phẩm, rồi tìm kiếm theo mã sản phẩm và in ra thông tin sản phẩm tìm được trên form.
 
 e) Trên form tạo nút sắp xếp, khi được nhấn sẽ hiển thị ra cửa sổ Console danh sách sản phẩm được sắp xếp theo chiều tăng dần của giá bán .
+
+# ĐỀ SỐ 4-1
+Một hãng hàng không cần quản lý các loại vé máy bay bao gồm: Vé hạng thương gia và Vé hạng phổ thông. Mỗi vé cần quản lý các thuộc tính: Mã vé, Họ tên khách hàng, Giá vé cơ bản, PHI_SAN_BAY = 250.000.
+
+Lớp Vé hạng thương gia có thêm thuộc tính: Dịch vụ phòng chờ (boolean), Hệ số sang trọng (thường là 2.0).
+
+Giá bán = Giá vé cơ bản * Hệ số sang trọng + Phí sân bay + 500.000 (nếu có sử dụng Dịch vụ phòng chờ).
+
+Lớp Vé hạng phổ thông có thêm thuộc tính: Khối lượng hành lý ký gửi (kg).
+
+Giá bán = Giá vé cơ bản + Phí sân bay + (Khối lượng hành lý * 50.000).
+
+Yêu cầu:
+
+a) Xây dựng các lớp VeThuongGia, VePhoThong kế thừa từ lớp VeMayBay (2 điểm).
+
+b) Xây dựng các phương thức khởi tạo (constructor), các phương thức getter/setter, phương thức tính giá bán, và phương thức toString để in thông tin chi tiết cho từng lớp (2 điểm). 
+
+c) Xây dựng giao diện (GUI) cho phép nhập thông tin cho VeThuongGia hoặc VePhoThong. Khi ấn nút “Thêm” sẽ khởi tạo đối tượng tương ứng và lưu vào một danh sách (List) trong chương trình (2 điểm). 
+
+d) Xây dựng chức năng hiển thị: Khi người dùng ấn nút "Hiển thị", danh sách các vé đã nhập sẽ được hiển thị lên bảng (JTable) trên giao diện hoặc in ra cửa sổ Console (2 điểm). 
+
+e) Trên giao diện có nút “Lưu File”. Khi ấn nút này, chương trình sẽ lưu toàn bộ thông tin các vé trong danh sách vào file vemaybay.txt (sinh viên tự định nghĩa cấu trúc file, ví dụ: lưu dạng text hoặc object serialization) (2 điểm).
